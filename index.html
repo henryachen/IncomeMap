@@ -97,7 +97,7 @@ d3.json("us.json", function(error, us) {
     .append("title")
       .text(function(d) {
         return d.properties.name
-            + "\nAggregate Income: " + formatNumber(d.properties.population);
+            + "\nAggregate Income: $" + formatNumber(d.properties.population);
       });
 });
 
