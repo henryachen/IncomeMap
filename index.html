@@ -59,9 +59,9 @@ var svg = d3.select("body").append("svg")
 
 var legend = svg.append("g")
     .attr("class", "legend")
-    .attr("transform", "translate(" + (width - 50) + "," + (height - 20) + ")")
+    .attr("transform", "translate(" + (width - 55) + "," + (height - 20) + ")")
   .selectAll("g")
-    .data([2e10, 90e10, 2e11])
+    .data([8e10, 2e11, 4e11])
   .enter().append("g");
 
 legend.append("circle")
