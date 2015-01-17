@@ -20,7 +20,7 @@ build/counties.json: build/gz_2010_us_050_00_20m.shp ACS_13_5YR_B19313_with_ann.
 		--external-properties=ACS_13_5YR_B19313_with_ann.csv \
 		--properties='name=Geography,population=+d.properties["Estimate; Aggregate income in the past 12 months (in 2013 inflation-adjusted dollars)"]' \
 		--projection='width = 960, height = 600, d3.geo.albersUsa() \
-			.scale(1280) \
+			.scale(960) \
 			.translate([width / 2, height / 2])' \
 		--simplify=.5 \
 		--filter=none \
